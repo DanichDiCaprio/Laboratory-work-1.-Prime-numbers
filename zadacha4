@@ -1,0 +1,27 @@
+#include <iostream>
+int main()
+{
+    int N, Q, M;
+    scanf_s("%d %d", &N, &Q);
+    for (int i = 0; i < Q; i++)
+    {
+        scanf_s("%d", &M);
+        bool p = true;
+        if (M >= 0 && M <= 1)
+            printf("%d not \n", M);
+        else
+        {
+            for (int i = 2; i * i <= M; i++)
+            {
+                if (M % i == 0)
+                {
+                    p = false;
+                }
+            }
+            if (p)
+                printf("%d prime \n", M);
+            else
+                printf("%d not \n", M);
+        }
+    }
+}
