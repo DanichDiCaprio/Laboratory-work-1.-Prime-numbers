@@ -1,0 +1,31 @@
+#include <iostream>
+
+int main()
+{
+    int N, K = 0;
+    
+    scanf_s("%d", &N);
+    if (N > 1)
+    {
+        for (int J = 1; J + 1 <= N; J++)
+        {
+            if (N % J == 0)
+            {
+                K++;
+            }
+        }
+        if (K > 1)
+        {
+            printf("NO");
+        }
+        else
+        {
+            printf("YES");
+        }
+    }
+    else
+    {
+        printf("NO");
+    }
+
+}
