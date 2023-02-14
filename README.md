@@ -1,0 +1,1 @@
+# Laboratory-work-1.-Prime-numbers
